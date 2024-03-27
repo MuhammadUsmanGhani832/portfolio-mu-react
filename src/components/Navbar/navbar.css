@@ -1,0 +1,81 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 5px;
+}
+
+.logo h1 {
+  font-size: 32px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuOpen {
+  display: none;
+}
+.menuCross {
+  display: none;
+}
+
+.link {
+  color: #bdc2c7;
+  padding: 10px 20px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.btn button {
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  margin-left: 50px;
+}
+
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, white, transparent);
+}
+
+@media screen and (min-width: 1401px) {
+}
+@media screen and (max-width: 1400px) {
+}
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 992px) {
+  .content {
+    flex-direction: column;
+    width: 300px;
+    background-color: green;
+    height: 100vh;
+    transition: 1s ease;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    position: absolute;
+    right: -400px;
+    top: 0;
+  }
+  .menuCross {
+    display: block;
+    margin: 20px;
+    align-self: flex-end;
+  }
+  .menuOpen {
+    display: block;
+  }
+}
+@media screen and (max-width: 768) {
+}
+@media screen and (max-width: 575px) {
+}
